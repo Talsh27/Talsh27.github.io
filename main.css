@@ -16,7 +16,6 @@ html, body {
     font-family: 'Merriweather', serif;
     font-size: 18px;
     line-height: 1.6em;
-    cursor: none !important;
 }
 
 ul {
@@ -112,19 +111,24 @@ ul {
     padding: 3em;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     transition: all 0.3s ease;
+    font-weight: 300;
 }
 
 .About-sidebar p {
-    margin-top: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .About-sidebar h3 {
     font-size: 1.5em;
 }
 
-.About-sidebar .social {
-    font-size: 0.6em;
+.About-sidebar .social a {
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    color: #ffffff;
 }
 
 #menu, #closeButton {
@@ -155,31 +159,39 @@ ul {
 #menu.closeButton .hamburger-icon span.first {
     transform: rotate(45deg);
     width: 40px;
-    margin-right: 6px;
+    margin-right: 5px;
     margin-top: 10px;
 }
 
 #menu.closeButton .hamburger-icon span.second {
     transform: rotate(-45deg);
     width: 40px;
-    margin-top: -13px;
+    margin-top: -10px;
 }
 
 /* Checkout */
 
 #checkoutbtn {
     position: absolute;
-    bottom: 20px;
+    bottom: 30px;
     right: 20px;
     padding: 25px 40px;
     border-radius: 30px;
-    background-color:#d96f4c;
+    background-color:#dd734f;
     color: #ffffff;
     letter-spacing: 0.1em;
     font-size: 1.3em;
     z-index: 1;
-    /* cursor: pointer; */
+    box-shadow: 0px 12px 0px #944c34;
+    transition: all 0.1s ease;
 }
+
+#checkoutbtn:hover {
+    box-shadow: 0px 6px 0px #793b27;
+    transition: all 0.1s ease;
+
+}
+
 
 #checkout {
     position: absolute;
@@ -224,7 +236,7 @@ ul {
 }
 
 #checkout .cart ul li {
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
 }
@@ -238,9 +250,19 @@ ul {
 #checkout #payNow {
     background-color: #ffffff;
     padding: 25px 35px;
-    margin-top: 20px;
-    width: auto;
+    margin: 20px auto 0;
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0px 10px 0px #dadada;
+    transition: all 0.1s ease;
 }
+
+#checkout #payNow:hover {
+    box-shadow: 0px 6px 0px #b3b3b3;
+    transition: all 0.1s ease;
+
+}
+
 
 #checkout .payment-details input {
     height: 50px;
